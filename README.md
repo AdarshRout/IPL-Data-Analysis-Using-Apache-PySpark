@@ -99,11 +99,13 @@ Team master data with team IDs and names
 ├── Player.csv                 # Player master data
 ├── Player_match.csv           # Player-match relationship data
 ├── Team.csv                   # Team master data
-├── IPL-data-analysis.ipynb    # Main analysis notebook
+├── IPL-data-analysis.ipynb    # Main analysis notebook (⚠️ Update file paths before running)
 ├── artifacts/                 # Spark artifacts and logs
 ├── spark-warehouse/           # Spark warehouse directory
 └── README.md                  # Project documentation
 ```
+
+> **⚠️ Important Note**: The notebook contains placeholder paths like `path_to_Ball_By_Ball.csv`. You must replace these with actual file paths to your dataset files before running the analysis.
 
 ## 🔧 Setup and Installation
 
@@ -130,10 +132,41 @@ Team master data with team IDs and names
    jupyter notebook
    ```
 
-4. **Open the analysis notebook**
-   Open `IPL-data-analysis.ipynb` and run the cells sequentially
+4. **Update Dataset Paths**
+   Before running the analysis, you must update the file paths in the notebook:
+   - Open `IPL-data-analysis.ipynb`
+   - Replace all placeholder paths with actual paths to your dataset files:
+     - `path_to_Ball_By_Ball.csv` → Your actual Ball_By_Ball.csv path
+     - `path_to_Match.csv` → Your actual Match.csv path
+     - `path_to_Player.csv` → Your actual Player.csv path
+     - `path_to_Player_match.csv` → Your actual Player_match.csv path
+     - `path_to_Team.csv` → Your actual Team.csv path
+
+5. **Run the analysis notebook**
+   Execute the cells sequentially after updating the paths
 
 ## 💻 Usage
+
+### Important: Configure File Paths
+
+**Before running any analysis**, you must update the dataset file paths in the notebook:
+
+1. Open `IPL-data-analysis.ipynb`
+2. Look for the data loading cells (cells 7, 11, 13, 15, 16)
+3. Replace the placeholder paths with your actual file paths:
+
+```python
+# Example replacements needed:
+ball_by_ball_df = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("path_to_Ball_By_Ball.csv")
+# Replace with:
+ball_by_ball_df = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("C:/your/actual/path/Ball_By_Ball.csv")
+
+# Similarly for all other datasets:
+# - path_to_Match.csv
+# - path_to_Player.csv  
+# - path_to_Player_match.csv
+# - path_to_Team.csv
+```
 
 ### Running the Analysis
 
