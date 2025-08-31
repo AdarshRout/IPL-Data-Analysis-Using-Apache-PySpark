@@ -229,8 +229,6 @@ Most Economical Bowlers in Powerplay (Sample):
 |   sunil narine   |              0.97|           18|
 +------------------+------------------+-------------+
 
-<img width="984" height="590" alt="image" src="https://github.com/user-attachments/assets/c70b1ff3-851f-4501-ae99-484682fc4d76" />
-<img width="1511" height="701" alt="image" src="https://github.com/user-attachments/assets/a42ca3c6-daca-4141-971f-4b7680ad3d29" />
 
 ```
 
