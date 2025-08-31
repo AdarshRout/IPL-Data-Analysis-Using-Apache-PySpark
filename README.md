@@ -100,9 +100,6 @@ Team master data with team IDs and names
 ├── Player_match.csv           # Player-match relationship data
 ├── Team.csv                   # Team master data
 ├── IPL-data-analysis.ipynb    # Main analysis notebook (⚠️ Update file paths before running)
-├── images/                    # Directory for saving generated charts
-├── artifacts/                 # Spark artifacts and logs
-├── spark-warehouse/           # Spark warehouse directory
 └── README.md                  # Project documentation
 ```
 
@@ -228,8 +225,6 @@ Most Economical Bowlers in Powerplay (Sample):
 |   jasprit bumrah |              0.94|           12|
 |   sunil narine   |              0.97|           18|
 +------------------+------------------+-------------+
-
-
 ```
 
 ### Sample Analysis Queries
@@ -378,17 +373,9 @@ The generated charts reveal patterns such as:
 - **Scoring Patterns**: Running totals show acceleration patterns typically occurring in overs 16-20
 - **Win Margins**: High margin wins (100+ runs) correlate with exceptional individual performances
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-analysis`)
-3. Commit your changes (`git commit -am 'Add new analysis'`)
-4. Push to the branch (`git push origin feature/new-analysis`)
-5. Create a Pull Request
-
 ## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [Apache-2.0 License](LICENSE).
 
 ## 👤 Author
 
